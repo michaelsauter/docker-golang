@@ -1,5 +1,5 @@
-TAG ?= 1.4.2
+TAG ?= 1.4.2-r1
 
 build: Dockerfile
-	docker build -t michaelsauter/golang:$(TAG) .
+	docker build --build-arg go_version=$(TAG) -t michaelsauter/golang:$(TAG) .
 	docker tag -f michaelsauter/golang:$(TAG) michaelsauter/golang:latest
