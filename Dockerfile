@@ -1,7 +1,7 @@
 FROM       michaelsauter/alpine:3.2
 MAINTAINER Michael Sauter <mail@michaelsauter.net>
 
-ARG go_version=1.5.2-r0
+ARG go_version
 
 RUN sudo apk-install go=$go_version
 
