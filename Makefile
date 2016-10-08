@@ -1,5 +1,5 @@
-TAG ?= 1.6
+TAG ?= 1.7
 
 build: Dockerfile
 	docker build -t michaelsauter/golang:$(TAG) .
-	docker tag -f michaelsauter/golang:$(TAG) michaelsauter/golang:latest
+	docker tag michaelsauter/golang:$(TAG) michaelsauter/golang:latest
