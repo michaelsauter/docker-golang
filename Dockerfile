@@ -3,7 +3,7 @@ MAINTAINER Michael Sauter <mail@michaelsauter.net>
 
 RUN sudo apt-get install -y git
 
-ENV GO_VERSION 1.8.3
+ENV GO_VERSION 1.11.4
 
 RUN cd /tmp; \
     curl -LO https://storage.googleapis.com/golang/go$GO_VERSION.linux-amd64.tar.gz; \
