@@ -1,7 +1,7 @@
 FROM       michaelsauter/ubuntu:16.04
 MAINTAINER Michael Sauter <mail@michaelsauter.net>
 
-RUN sudo apt-get install -y git
+RUN sudo apt-get update -y && sudo apt-get install -y git
 
 ENV GO_VERSION 1.11.4
 
