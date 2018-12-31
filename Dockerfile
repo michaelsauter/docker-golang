@@ -14,7 +14,7 @@ RUN cd /tmp; \
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
-RUN mkdir -p $GOPATH && \
+RUN sudo mkdir -p $GOPATH && \
     sudo chown -R ubuntu:ubuntu $GOPATH && \
     go get golang.org/x/tools/cmd/goimports
 
