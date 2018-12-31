@@ -16,3 +16,5 @@ ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
 VOLUME  $GOPATH
 WORKDIR $GOPATH
+
+RUN go get golang.org/x/tools/cmd/goimports
